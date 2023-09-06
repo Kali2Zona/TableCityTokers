@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+    Student: Carrie Clifton
+    File: contact.html
+    Date: 09/05/2023
+-->
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Meta Tags for SEO -->
+	<meta name="description" content="Cannabis fan and education">
+	<meta name="keywords" content="NOSTR, Cannabis, education, bitcoin, plebchain">
+	<meta name="author" content="Kali2Zona">
+    <title>TableCityTokers: Contact</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preload" as="image" href="images/purpleback.jpg">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap">
+</head>
+<body>
+	<header class="sticky-header">
+        <h1>TableCityTokers</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">TableCityTokers</a></li>
+                <li><a href="about.html">Who We Are</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Socials & Events</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+    <hr>
+
+    <main>
+        <section class="contact">
+            <h2>Reach out and say HIGH.</h2>
+            <p>Email: <a href="mailto:tablecitytokers@gmail.com">TableCityTokers</a></p>
+            <p>We are located in Tempe, AZ</p>
+            <p>Nostr is another great way to connect with us and our community. Verified by <a href="https://weedstr.net/" target="_blank">#WEEDSTR</a> and <a href="https://zebedee.io/" target="_blank">Zebedee</a> <a href="https://damus.io/npub1yr3552867nk9vqx8jductdgp6cuzndj0345xpeup0xn5tljvy7kqps8fls" target="_blank">@TableCityTokers</a></p>
+        </section>
+    </main>
+	
+	<hr>
+	
+	<section class="contact-info">
+		<div class="nostr-box">
+			<a href="https://nostr.com" target="_blank">
+				<img src="images/nostrich.png" alt="nostr image">
+			</a>
+			<p><strong>Nostr (Notes & Other Services Transmitted by Relays)</strong> is a protocol that provides relay services for transmitting notes and other services. There are several clients that can be used to connect you with relays throughout the world.</p>
+        
+			<!-- Embeded media/video -->
+			<div class="video-container">
+				<video controls>
+					<source src="media/tct_dabs.mp4" type="video/mp4">
+				
+				</video>
+			</div>
+		</div>
+	</section>
+	
+	<section class="contact-container">
+		<h3>Leave us a Message</h3>
+			<form class="contact-form" action="submit_form.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+        
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+        
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone">
+        
+				<label for="subject">Subject:</label>
+				<input type="text" id="subject" name="subject" required>
+        
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" rows="4" required></textarea>
+        
+				<button type="submit" class="btn">Submit</button>
+			</form>
+	</section>
+
+    <footer>
+		<p>&copy; 2023 STEnterprise. All rights reserved.</p>
+		<p>&#x26a1;Lightning Protocol always accepted. Bitcoin is the Way!&#x26a1;</p>
+
+		<div class="social-media-icons">
+			<a href="https://damus.io">
+				<img src="images/damus_logo.jpg" alt="Damus logo" style="width: 20px; height: 20px;">
+			</a>
+
+			<a href="https://snort.social">
+				<img src="images/snort_icon.jpg" alt="Snort Social logo" style="width: 20px; height: 20px;">
+			</a>
+
+			<a href="https://zebedee.io">
+				<img src="images/zbd_logo.jpg" alt="ZeBeDee logo" style="width: 20px; height: 20px;">
+			</a>
+		</div>
+	</footer>
+</body>
+</html>

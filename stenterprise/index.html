@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+	Student: Carrie Clifton
+	File: index.html
+	Date: 09/05/2023
+-->
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Meta Tags for SEO -->
+	<meta name="description" content="Cannabis fan and education">
+	<meta name="keywords" content="NOSTR, Cannabis, education, bitcoin, plebchain">
+	<meta name="author" content="Kali2Zona">
+    <title>TableCityTokers: Main</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preload" as="image" href="images/purpleback.jpg">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap">
+	
+	
+</head>
+<body>
+	<header class="sticky-header">
+        <h1>TableCityTokers</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">TableCityTokers</a></li>
+                <li><a href="about.html">Who We Are</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Socials & Events</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+	<hr>
+	
+	<main>
+	
+		<section class="intro">
+		
+			<h2>Welcome to TableCityTokers</h2>
+			<p>&#x270C; Stay Medicated & Educated &#x270C;</p>
+			
+		</section>
+		
+		<br>
+		
+		<section>
+			<p>Founded in 2012, TableCityTokers has been a part of the Cannabis Culture for well over a decade and our combined personal experience is over 50 years. (Man, have we seen some changes...). We have seen the industry evolve globally year over year and plan to be a part of that continued humanitarian evolution.</p>
+			
+			<p>While we promote Staying Medicated & Educated, we do not sell any products here. This page is a fan page with a ton of great information and resources.</p>
+			
+		</section>
+			
+			
+		<div class="gallery">
+            <div class="slide active">
+                <img src="images/cannajar.jpg" alt="slide 1">
+            </div>
+            <div class="slide">
+                <img src="images/cannacures1.jpg" alt="slide 2">
+            </div>
+            <div class="slide">
+                <img src="images/cannacures2.jpg" alt="slide 3">
+            </div>
+        </div>
+
+        <button onclick="showAlert()">TapIn</button>
+	</main>
+	
+<footer>
+    <p>&copy; 2023 STEnterprise. All rights reserved.</p>
+    <p>&#x26a1;Lightning Protocol always accepted. Bitcoin is the Way&#x26a1;</p>
+
+    <div class="social-media-icons">
+		<a href="https://damus.io">
+			<img src="images/damus_logo.jpg" alt="Damus logo" style="width: 20px; height: 20px;">
+		</a>
+
+		<a href="https://snort.social">
+			<img src="images/snort_icon.jpg" alt="Snort Social logo" style="width: 20px; height: 20px;">
+		</a>
+
+		<a href="https://zebedee.io">
+			<img src="images/zbd_logo.jpg" alt="ZeBeDee logo" style="width: 20px; height: 20px;">
+		</a>
+	</div>
+
+</footer>
+	
+	<script>
+		function showAlert() {
+			alert("All images owned by TableCityTokers unless otherwise stated.");
+		}
+
+		const slides = document.querySelectorAll('.slide');
+		let currentSlide = 0;
+
+		function showSlide(slideIndex) {
+			slides.forEach((slide, index) => {
+				slide.classList.remove('active');
+				if (index === slideIndex) {
+					slide.classList.add('active');
+				}
+			});
+		}
+
+		function nextSlide() {
+			currentSlide = (currentSlide + 1) % slides.length;
+			showSlide(currentSlide);
+		}
+
+		// Automatically advance to the next slide every 5 seconds
+		setInterval(nextSlide, 5000);
+
+		// Initial slide display
+		showSlide(currentSlide);
+	</script>
+</body>
+</html>
